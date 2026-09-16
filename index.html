@@ -1,1 +1,141 @@
-<h1>Okay ahora si quiero cambiar cambio asi</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Serafini</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<style>
+
+  /* ---------- variables de diseño ---------- */
+  :root {
+    --color-principal: #1A477E;
+    --color-texto: #222222;
+    --color-fondo: #ffffff;
+    --fuente: "Zalando Sans", sans-serif;
+    --ancho-maximo: 640px;
+  }
+
+  /* ---------- reseteo simple ---------- */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--fuente);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+    padding: 2rem 1.25rem;
+  }
+
+  /* ---------- contenedor central ---------- */
+  .contenedor {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+  }
+
+  /* ---------- encabezado ---------- */
+  .nombre {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-principal);
+    line-height: 1.1;
+  }
+
+  .ocupacion {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-principal);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ---------- sobre mi ---------- */
+  .sobre-mi p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ---------- contacto ---------- */
+  .contacto {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--color-principal);
+  }
+
+  .contacto-titulo {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-principal);
+    margin-bottom: 0.75rem;
+  }
+
+  .contacto a {
+    display: inline-block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-principal);
+    text-decoration: none;
+  }
+
+  .contacto a:hover,
+  .contacto a:focus {
+    text-decoration: underline;
+  }
+
+  /* ---------- ajustes para pantallas chicas ---------- */
+  @media (max-width: 480px) {
+    .nombre {
+      font-size: 2rem;
+    }
+
+    body {
+      padding: 1.5rem 1rem;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <header>
+      <h1 class="nombre">Juan Serafini</h1>
+      <p class="ocupacion">Consultor técnico de alimentos no perecederos</p>
+    </header>
+
+    <section class="sobre-mi">
+      <p>
+        Trabajo asesorando a empresas del sector alimenticio en el desarrollo, control de calidad
+        y buenas prácticas para productos no perecederos, acompañando cada etapa del proceso
+        con criterio técnico y atención al detalle.
+      </p>
+      <p>
+        Mi enfoque combina el conocimiento técnico con una mirada práctica: entender los procesos
+        de producción tanto como las necesidades reales de cada cliente.
+      </p>
+      <p>
+        Si estás buscando asesoramiento en esta área o simplemente querés conversar sobre el tema,
+        podés contactarme por Instagram.
+      </p>
+    </section>
+
+    <section class="contacto">
+      <p class="contacto-titulo">Contacto</p>
+      <a href="https://instagram.com/serafini6" target="_blank" rel="noopener">@serafini6 en Instagram</a>
+    </section>
+
+  </div>
+
+</body>
+</html>
